@@ -1,0 +1,15 @@
+<h1><%= @title = @venue.name %></h1>
+<p id="notice"><%= notice %></p>
+
+  <%= @venue.street_address %>
+
+  <%= @venue.city %>
+
+  <%= @venue.state %>
+
+  <%= @venue.zip %>
+
+
+<p>
+<%= link_to 'Edit', edit_venue_path(@venue) %> |
+<%= link_to 'Back', "/home/index" %>
