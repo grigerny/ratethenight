@@ -7,8 +7,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+    </div>
+  </div>
+</div>  
+<div class="alert">
+  <button class="close" data-dismiss="alert">×</button>
+  <strong>Welcome!</strong> Is this your first time on this site, if so click --> HERE
+</div>
 
+
+<div class="well">
 <%= yield %>
+</div>
+</br>
+<div class="well">
+123
+</div>
+
+
 
 </body>
 </html>
