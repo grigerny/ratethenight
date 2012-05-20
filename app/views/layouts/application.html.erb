@@ -7,24 +7,60 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="navbar-fixed-top">
+
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+    <a class="brand" href="#">
+      Hopbug
+    </a>
+      <ul class="nav">
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+        <li><a href="/venues">Venues</a></li>
+        <li><a href="/users">Users</a></li>
+      </ul>
+      
+      <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script> 
+      <div class="btn-group pull-right">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+          User Profile
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+        <li><a href="/users">Profile</a></li>
+         <li><a href="/venues">Settings</a></li>
+         <li><a href="/users">Sign Out</a></li>
+        </ul>
+      </div>
+   
+      <form class="navbar-search pull-right">
+        <input type="text" class="search-query" placeholder="Search">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+  </br>
+  <h3>Sign Up!</h3>
+  <form class="well form-inline pull-left">
+    <input type="text" class="input-small" placeholder="Email">
+    <input type="password" class="input-small" placeholder="Password">
+    <label class="checkbox">
+      <input type="checkbox"> Remember me
+    </label>
+    <button type="submit" class="btn">Sign in</button>
+  </form>
+
+
+<div class="navbar-fixed-bottom">
   <div class="navbar-inner">
     <div class="container">
     </div>
   </div>
-</div>  
-<div class="alert">
-  <button class="close" data-dismiss="alert">×</button>
-  <strong>Welcome!</strong> Is this your first time on this site, if so click --> HERE
-</div>
-
-
-<div class="well">
-<%= yield %>
-</div>
-</br>
-<div class="well">
-123
 </div>
 
 

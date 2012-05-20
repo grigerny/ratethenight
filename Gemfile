@@ -10,6 +10,7 @@ gem "twitter-bootstrap-rails"
 group :assets do
   gem 'less'
 end
+gem 'omniauth-facebook'
 
 
 # Gems used only for assets and not required
