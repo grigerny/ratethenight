@@ -11,6 +11,8 @@ group :assets do
   gem 'less'
 end
 gem 'omniauth-facebook'
+gem "omniauth-twitter", "~> 0.0.11"
+
 
 
 # Gems used only for assets and not required

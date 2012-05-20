@@ -1,9 +1,19 @@
 App::Application.routes.draw do
+  get "sessions/new"
+
+  get "sessions/create"
+
+  get "sessions/failure"
+
   resources :venues
 
   resources :users
   
   get "/home/index"
+  
+  match "/auth/:provider/callback" => "sessions#create"  
+      match '/auth/failure', :to => 'sessions#failure'  
+      match "/signout" => "sessions#destroy", :as => :signout
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
