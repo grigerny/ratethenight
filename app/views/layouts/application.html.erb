@@ -8,16 +8,17 @@
 </head>
 <body>
 
+<%= yield %>
 
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-    <a class="brand" href="#">
+    <a class="brand" href="/home/index">
       Hopbug
     </a>
       <ul class="nav">
         <li class="active">
-          <a href="#">Home</a>
+          <a href="/home/index">Home</a>
         </li>
         <li><a href="/venues">Venues</a></li>
         <li><a href="/users">Users</a></li>
@@ -46,15 +47,7 @@
 
 
   </br>
-  <h3>Sign Up!</h3>
-  <form class="well form-inline pull-left">
-    <input type="text" class="input-small" placeholder="Email">
-    <input type="password" class="input-small" placeholder="Password">
-    <label class="checkbox">
-      <input type="checkbox"> Remember me
-    </label>
-    <button type="submit" class="btn">Sign in</button>
-  </form>
+
 
 
 <div class="navbar-fixed-bottom">
@@ -64,8 +57,6 @@
   </div>
 </div>
 </br>
-
-
 
 
 </body>
